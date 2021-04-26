@@ -1,5 +1,5 @@
 html { 
-    background: url("./draft\ left\ screen\ collage.png") no-repeat 0 center fixed; 
+    background: url("./left.png") no-repeat 0 center fixed; 
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -7,7 +7,7 @@ html {
   }
   
   html {
-    background-image: url("./draft\ left\ screen\ collage.png"), url("./draft\ right\ screen\ collage.png");
+    background-image: url("./left.png"), url("./right.png");
     background-position: left center, right center;
     background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -28,18 +28,25 @@ html {
   }
 
 
-  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+  @media screen and (max-width: 1024px) { 
     html{
-        background-size: cover;
-    }
+        background-image: url("./left.png"), url("./right.png");
+        background-position: left top, right top;
+        height: 100vh;
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        }
     
     img.spinner {
-        margin-top: 50%;
+        margin-top: 30vh;
         width: 50%;
         }
     
     #spinning {
-         margin-top: 50%;
+         margin-top: 30vh;
          width: 50%;
          }
     
