@@ -63,7 +63,7 @@
     }
         audioCtx = new AudioContext();
         
-        const tracks = './audio.mp3';
+        const tracks = './a.mp3';
 
         loadFile(tracks)
         .then((track)=>{
