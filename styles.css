@@ -1,0 +1,47 @@
+html { 
+    background: url("./draft\ left\ screen\ collage.png") no-repeat 0 center fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+  
+  html {
+    background-image: url("./draft\ left\ screen\ collage.png"), url("./draft\ right\ screen\ collage.png");
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+
+  img.spinner{
+    display: block;
+    margin: auto auto;
+    cursor: pointer;  
+  }
+
+  #spinning {
+    display: block;
+    margin: auto auto;
+  }
+
+
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    html{
+        background-size: cover;
+    }
+    
+    img.spinner {
+        margin-top: 50%;
+        width: 50%;
+        }
+    
+    #spinning {
+         margin-top: 50%;
+         width: 50%;
+         }
+    
+  }
+  
