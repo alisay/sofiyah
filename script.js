@@ -78,6 +78,7 @@
             junk.parentNode.removeChild(junk);
             spinner.style.visibility = 'visible';
             spinner.style.pointerEvents = 'auto';
+            // lose audio here somehow
         }, 30000)
     })
 })();
