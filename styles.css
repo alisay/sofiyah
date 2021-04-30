@@ -20,11 +20,15 @@ html {
     display: block;
     margin: auto auto;
     cursor: pointer;  
+    width: 250px;
+    padding-top: 25vh;
   }
 
   #spinning {
     display: block;
     margin: auto auto;
+    width: 250px;
+    padding-top: 25vh;
   }
 
 
@@ -41,14 +45,14 @@ html {
         }
     
     img.spinner {
-        margin-top: 30vh;
-        width: 50%;
-        }
+        padding-top: 25vh;
+        width: 250px;
+    }
     
     #spinning {
-         margin-top: 30vh;
-         width: 50%;
-         }
+         padding-top: 25vh;
+         width: 250px;
+        }
     
   }
   

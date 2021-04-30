@@ -19,14 +19,18 @@
     }
 
     spinner.addEventListener('click', () => {
+        if(document.getElementById('spinning')){
+            document.getElementById('spinning').parentNode.removeChild(document.getElementById('spinning'));
+        }
         spinner.style.pointerEvents = 'none';
         spinner.style.visibility = 'hidden';
         let img = document.createElement('img');
         img.id = 'spinning';
         img.src = randomNumber(fortunes);
         document.getElementById('app').insertBefore(img, spinner);
+        console.log(`just played spinner ${img.src}`)
 
-        setTimeout(() => {
+    window.setTimeout(() => {
             let junk = document.getElementById('spinning');
             junk.parentNode.removeChild(junk);
             spinner.style.visibility = 'visible';
