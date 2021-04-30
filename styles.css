@@ -1,9 +1,11 @@
-html { 
+html, body { 
     background: url("./left.png") no-repeat 0 center fixed; 
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
+    margin: 0px;
+    height: 100%;
   }
   
   html {
@@ -16,23 +18,27 @@ html {
     background-size: contain;
   }
 
+  div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+  }
+
   img.spinner{
-    display: block;
-    margin: auto auto;
     cursor: pointer;  
-    width: 375px;
-    padding-top: 25vh;
+    height: 50%;
+    align-self: center;
   }
 
   #spinning {
-    display: block;
-    margin: auto auto;
-    width: 375px;
-    padding-top: 25vh;
+    height: 50%;
+    align-self: center;
   }
 
 
-  @media screen and (max-width: 1024px) { 
+  @media screen and (max-width: 480px) { 
     html{
         background-image: url("./left.png"), url("./right.png");
         background-position: left top, right top;
@@ -45,13 +51,9 @@ html {
         }
     
     img.spinner {
-        padding-top: 25vh;
-        width: 375px;
     }
     
     #spinning {
-         padding-top: 25vh;
-         width: 375px;
         }
     
   }

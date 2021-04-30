@@ -24,6 +24,7 @@
         }
         spinner.style.pointerEvents = 'none';
         spinner.style.visibility = 'hidden';
+        spinner.style.position = 'absolute';
         let img = document.createElement('img');
         img.id = 'spinning';
         img.src = randomNumber(fortunes);
