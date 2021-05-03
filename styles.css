@@ -1,23 +1,13 @@
 html, body { 
-    background: url("./left.png") no-repeat 0 center fixed; 
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    background: url("./background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin: 0px;
     height: 100%;
   }
   
-  html {
-    background-image: url("./left.png"), url("./right.png");
-    background-position: left center, right center;
-    background-repeat: no-repeat;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
-
   div {
       display: flex;
       justify-content: center;
@@ -40,14 +30,14 @@ html, body {
 
   @media screen and (max-width: 480px) { 
     html{
-        background-image: url("./left.png"), url("./right.png");
-        background-position: left top, right top;
+        /* background-image: url("./background.png");
+        background-position: left top;
         height: 100vh;
         background-repeat: no-repeat;
         -webkit-background-size: contain;
         -moz-background-size: contain;
         -o-background-size: contain;
-        background-size: contain;
+        background-size: contain; */
         }
     
     img.spinner {
