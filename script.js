@@ -17,7 +17,7 @@
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
     }
-    
+
     spinner.addEventListener('click', () => {
         if(document.getElementById('spinning')){
             document.getElementById('spinning').parentNode.removeChild(document.getElementById('spinning'));
@@ -29,13 +29,11 @@
         img.id = 'spinning';
         img.src = randomNumber(fortunes);
         document.getElementById('app').insertBefore(img, spinner);
-        console.log(`just played spinner ${img.src}`)
         document.body.style.pointerEvents = 'none';
 
     window.setTimeout(() => {
             let junk = document.getElementById('spinning');
             junk.parentNode.removeChild(junk);
-            console.log("cleaned up",document.getElementById('app'));
             spinner.style.visibility = 'visible';
             spinner.style.pointerEvents = 'auto';
         }, 30000)
