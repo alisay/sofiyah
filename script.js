@@ -32,7 +32,7 @@
             img.src = randomNumber(fortunes);
             document.getElementById('app').insertBefore(img, spinner);
             document.body.style.pointerEvents = 'none';
-    }, 500)
+    }, 200)
 
     window.setTimeout(() => {
             let junk = document.getElementById('spinning');
