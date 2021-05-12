@@ -25,17 +25,20 @@
         spinner.style.pointerEvents = 'none';
         spinner.style.visibility = 'hidden';
         spinner.style.position = 'absolute';
-        let img = document.createElement('img');
-        img.id = 'spinning';
-        img.src = randomNumber(fortunes);
-        document.getElementById('app').insertBefore(img, spinner);
-        document.body.style.pointerEvents = 'none';
+        
+        setTimeout(() => {
+            let img = document.createElement('img');
+            img.id = 'spinning';
+            img.src = randomNumber(fortunes);
+            document.getElementById('app').insertBefore(img, spinner);
+            document.body.style.pointerEvents = 'none';
+    }, 200)
 
     window.setTimeout(() => {
             let junk = document.getElementById('spinning');
             junk.parentNode.removeChild(junk);
             spinner.style.visibility = 'visible';
             spinner.style.pointerEvents = 'auto';
-        }, 30000)
+        }, 22000)
     })
 })();
