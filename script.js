@@ -34,6 +34,7 @@
     window.setTimeout(() => {
             let junk = document.getElementById('spinning');
             junk.parentNode.removeChild(junk);
+            console.log("cleaned up",document.getElementById('app'));
             spinner.style.visibility = 'visible';
             spinner.style.pointerEvents = 'auto';
         }, 30000)
